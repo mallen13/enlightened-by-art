@@ -1,6 +1,10 @@
-body{
+body p{
  	margin: 0px;
-}
+ 	text-align: center;
+ }
+ body h1{
+ /*	font-size: 3rem;*/
+ }
 h3{
 	color: #5E5D5C;
 	text-decoration: underline;
@@ -21,29 +25,44 @@ header{
  	height: 100vh;
  	background-color: lightblue;
  	color: #FFFFFF;
+ 	text-shadow: 2px 2px #000000;
 }
-
 header h3{
 	color: #FFFFFF;
     text-decoration: none;
+}
+header img{
+	width: 250px;
+	margin: 20px;
+	border: 2px solid white;
+	margin-top: -50px;
+	margin-bottom: 50px;
 }
 
 /*About Section*/
 .about{
 	color: #5E5D5C;
+	padding: 30px 30px 0px 30px;
 }
 .about img{
-	border-radius: 100px;
+	border-radius: 50%;
+	width: 175px;
+	margin: 10px;
+
 }
 
 /*Image Gallery*/
 .image_gallery{
-
+	padding: 30px 30px 0px 30px;
+}
+.carousel{
+	width: 250px;
 }
 
 /*Connect Section*/
 .connect{
 	color: #5E5D5C;
+	padding: 30px 30px 20px 30px;
 }
 .btn{
 	margin: 10px;
@@ -54,8 +73,9 @@ footer{
 	background-color: #5E5D5C;
 	color: #FFFFFF;
 	text-decoration: none;
-	text-align: center;
+	padding: 10px 30px 10px 30px;
 }
 footer a{
 	color: #FFFFFF;
+
 }
