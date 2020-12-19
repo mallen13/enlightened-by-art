@@ -11,7 +11,12 @@ body h2{
 }
 body p{
     font-size: 18px;
+    color: #5E5D5C;
 }
+body ul{
+	font-size: 17px;
+}
+
 .flex{
  	display: flex;
  	flex-direction: column;
@@ -26,25 +31,32 @@ body p{
 /*Header Section*/
 header{
  	height: 100vh;
- 	background-color: lightblue;
+ 	background-image: url("images/watercolor.jpg");
+ 	background-size: 100% 100%;
  	color: #FFFFFF;
  	text-shadow: 2px 2px #000000;
 }
 header h3{
 	color: #FFFFFF;
     text-decoration: none;
+
 }
 header img{
-	width: 275px;
+	width: 300px;
 	margin: 20px;
 	border: 2px solid white;
-	margin-top: -50px;
 	margin-bottom: 50px;
 }
+.headerText{
+	background-image: url("images/blackSquare.png");
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
 
 /*About Section*/
 .about{
-	color: #5E5D5C;
 	padding: 30px 30px 0px 30px;
 }
 .about img{
@@ -59,25 +71,27 @@ header img{
 	padding: 30px 30px 0px 30px;
 }
 .carousel{
-	width: 275px;
+	width: 300px;
 	margin: 20px;
 }
 
 /*Connect Section*/
 .connect{
+	padding: 10px 20px 20px 20px;
+}
+ul{
+	padding: 10px;
+}
+ul li{
+	padding: 5px  5px 0px 5px;
 	color: #5E5D5C;
-	padding: 10px 30px 20px 30px;
 }
-.btn{
-	margin: 10px;
+.connect a, .connect a:hover{ 
+	color: #5E5D5C;
 }
-.btn a, .btn a:hover{ 
+.btn a:hover{
 	color: #FFFFFF;
-	text-decoration: none;
 }
-/*.btn a:hover{
-	color: #FFFFFF;
-}*/
 
 /*Footer*/
 footer{
@@ -88,6 +102,7 @@ footer{
 }
 footer p{
 	font-size: 14px;
+	color: #FFFFFF;
 }
 footer a{
 	color: #FFFFFF;
