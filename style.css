@@ -31,7 +31,7 @@ body ul{
 /*Header Section*/
 header{
  	height: 100vh;
- 	background-image: url("images/watercolor.jpg");
+ 	background-image: url("images/background.png");
  	background-size: 100% 100%;
  	color: #FFFFFF;
  	text-shadow: 2px 2px #000000;
@@ -43,6 +43,7 @@ header h3{
 }
 header img{
 	width: 300px;
+	height: 300px;
 	margin: 20px;
 	border: 2px solid white;
 	margin-bottom: 50px;
@@ -85,12 +86,16 @@ ul{
 ul li{
 	padding: 5px  5px 0px 5px;
 	color: #5E5D5C;
+	list-style-position: inside;
 }
+
 .connect a, .connect a:hover{ 
 	color: #5E5D5C;
+	font-size: 15px;
 }
-.btn a:hover{
-	color: #FFFFFF;
+
+svg{
+  margin: 10px;
 }
 
 /*Footer*/
@@ -104,6 +109,106 @@ footer p{
 	font-size: 14px;
 	color: #FFFFFF;
 }
-footer a{
-	color: #FFFFFF;
+
+/*Media Queries*/
+
+/*Phone Landscape*/
+@media only screen and (min-width: 568px) {
+   
+	.header{
+       flex-direction: row-reverse;
+    }  
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+   
+	.header{
+       flex-direction: row-reverse;
+    }
+    .header img{
+    	width: 400px;
+    }
+    .about img{
+    	width: 200px;
+    }
+    .aboutContent{
+    	flex-direction: row;
+
+    }
+    .aboutContent p{
+    	text-align: left;
+    }
+    .galleryContent{
+    	flex-direction: row;
+    }
+    .carousel{
+    	width: 350px;
+    }
+    .connectContent{
+    	flex-direction: row;
+    }
+    .connectText{
+    	flex-direction: column;
+    	text-align: center;
+    }
+    .connectText ul{
+    	list-style-type: none;
+    }
+    svg{
+    	margin-right: 20px;
+    }
+}
+
+/*Computer*/
+@media only screen and (min-width: 992px) {
+    body h1{
+	 	font-size: 3.5rem;
+
+	 }
+	body p{
+	    font-size: 20px;
+	}
+	body ul{
+		font-size: 20px;
+	}
+
+	footer p{
+		font-size: 16px;
+	}
+	.header{
+       flex-direction: row-reverse;
+    }
+    .header img{
+    	width: 500px
+    }
+    .about img{
+    	width: 225px;
+    }
+    .aboutContent{
+    	flex-direction: row;
+    	max-width: 900px;
+    }
+    .aboutContent p{
+    	text-align: left;
+    }
+    .galleryContent{
+    	flex-direction: row;
+    }
+    .carousel{
+    	width: 400px;
+    }
+    .connectContent{
+    	flex-direction: row;
+    }
+    .connectText{
+    	flex-direction: column;
+    	text-align: center;
+    }
+    .connectText ul{
+    	list-style-type: none;
+    }
+    svg{
+    	margin-right: 20px;
+    }
 }
